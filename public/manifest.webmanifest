@@ -1,0 +1,20 @@
+{
+  "name": "DEKTA — Pelanggan dekat. Kerja tertata.",
+  "short_name": "DEKTA",
+  "description": "Satu tempat untuk menjaga pelanggan, pekerjaan, dan pendapatan bisnis tetap tertata.",
+  "lang": "id-ID",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f5f5f7",
+  "theme_color": "#a33dc3",
+  "icons": [
+    {
+      "src": "./assets/brand/dekta-symbol.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'" />
+    <meta name="theme-color" content="#a33dc3" />
+    <meta name="application-name" content="DEKTA" />
+    <meta name="dekta-api-base" content="auto" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="DEKTA" />
+    <meta name="description" content="DEKTA membantu bisnis Indonesia menjaga pelanggan tetap dekat, kerja tertata, dan pendapatan terjaga." />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DEKTA — Pelanggan dekat. Kerja tertata." />
+    <meta property="og:description" content="Satu tempat untuk menjaga pelanggan, pekerjaan, dan pendapatan bisnis tetap tertata." />
+    <meta property="og:image" content="./assets/brand/dekta-social-cover.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DEKTA — Pelanggan dekat. Kerja tertata." />
+    <meta name="twitter:description" content="Satu tempat untuk menjaga pelanggan, pekerjaan, dan pendapatan bisnis tetap tertata." />
+    <meta name="twitter:image" content="./assets/brand/dekta-social-cover.png" />
+    <title>DEKTA — Pelanggan dekat. Kerja tertata.</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/brand/dekta-symbol.svg" />
+    <link rel="apple-touch-icon" href="./assets/brand/dekta-symbol.svg" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css?v=0.1.3" />
+    <link rel="stylesheet" href="./v5.css?v=0.1.2" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-command" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h4v7H3V6a1 1 0 0 1 1-1Zm10-2h4a2 2 0 0 1 2 2v5h-7V3h1ZM3 14h7v7H6a3 3 0 0 1-3-3v-4Zm10 0h7v4a3 3 0 0 1-3 3h-4v-7Z"/></symbol>
+      <symbol id="icon-pipeline" viewBox="0 0 24 24"><path d="M4 5h16M7 12h10m-7 7h4"/><circle cx="4" cy="5" r="1"/><circle cx="7" cy="12" r="1"/><circle cx="10" cy="19" r="1"/></symbol>
+      <symbol id="icon-relationships" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm13 10v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="icon-experiments" viewBox="0 0 24 24"><path d="M9 3h6m-5 0v6.5L4.7 18a2 2 0 0 0 1.7 3h11.2a2 2 0 0 0 1.7-3L14 9.5V3M7.5 15h9"/></symbol>
+      <symbol id="icon-collection" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM16 12h2m-15-2h18M7 15h4"/></symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="icon-alert" viewBox="0 0 24 24"><path d="M12 3 2.7 20h18.6L12 3Z"/><path d="M12 9v4m0 3h.01"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+      <symbol id="icon-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 5v6h-6"/></symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="icon-trend" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-8M15 7h6v6"/></symbol>
+      <symbol id="icon-inbox" viewBox="0 0 24 24"><path d="M4 4h16v14H4zM4 14h5l2 3h2l2-3h5"/></symbol>
+      <symbol id="icon-adaptation" viewBox="0 0 24 24"><path d="M4 7h11m-3-3 3 3-3 3M20 17H9m3-3-3 3 3 3"/><circle cx="4" cy="17" r="2"/><circle cx="20" cy="7" r="2"/></symbol>
+      <symbol id="icon-building" viewBox="0 0 24 24"><path d="M4 21V5l8-3 8 3v16M8 8h1m6 0h1M8 12h1m6 0h1M8 16h1m6 0h1M3 21h18"/></symbol>
+      <symbol id="icon-megaphone" viewBox="0 0 24 24"><path d="m3 11 14-6v14L3 13v-2Zm0 0v2m4 2 1.5 5h3L10 16"/></symbol>
+      <symbol id="icon-file" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6zM14 2v5h5M9 12h6m-6 4h6"/></symbol>
+      <symbol id="icon-delivery" viewBox="0 0 24 24"><path d="M3 6h11v11H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24"><path d="M5 3v4m14-4v4M3 9h18M4 5h16a1 1 0 0 1 1 1v15H3V6a1 1 0 0 1 1-1Z"/></symbol>
+      <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+    </svg>
+
+    <main class="identity-gateway" id="identity-gateway" aria-live="polite">
+      <section class="identity-story" aria-label="Tentang DEKTA">
+        <a class="identity-brand" href="./" aria-label="DEKTA beranda"><img src="./assets/brand/dekta-symbol.svg" alt="" /><span><strong>DEKTA</strong><small>by Fixit Industries</small></span></a>
+        <div class="identity-story-copy"><span class="identity-kicker">Pelanggan dekat. Kerja tertata.</span><h1>Satu alur dari kebutuhan pelanggan sampai pekerjaan selesai.</h1><p>Tim penjualan, operasional, dan keuangan bekerja dengan konteks yang sama—tanpa saling menunggu spreadsheet terbaru.</p></div>
+        <ul class="identity-benefits">
+          <li><svg><use href="#icon-check"></use></svg><span><strong>Tahu yang perlu dikerjakan hari ini</strong><small>Prioritas, PIC, dan tenggat terlihat jelas.</small></span></li>
+          <li><svg><use href="#icon-check"></use></svg><span><strong>Perpindahan kerja tidak kehilangan konteks</strong><small>Riwayat, bukti, komentar, dan biaya tetap tersambung.</small></span></li>
+          <li><svg><use href="#icon-check"></use></svg><span><strong>Angka penjualan dan uang masuk tidak tercampur</strong><small>Pipeline, kontrak, tagihan, piutang, dan pembayaran tetap berbeda.</small></span></li>
+        </ul>
+        <p class="identity-local-note">Lingkungan pengujian · gunakan data contoh, bukan data klien asli.</p>
+      </section>
+
+      <section class="identity-panel" aria-label="Masuk dan siapkan workspace">
+        <div class="identity-card" data-identity-screen="loading"><span class="identity-loader" aria-hidden="true"></span><h2>Menyiapkan ruang kerja…</h2><p>Memeriksa sesi dan akses perusahaan Anda.</p></div>
+
+        <form class="identity-card" id="identity-email-form" data-identity-screen="email" hidden novalidate>
+          <div class="identity-step">Langkah 1 dari 3</div><h2>Masuk ke DEKTA</h2><p>Gunakan email kerja. Kami akan mengirim kode masuk sekali pakai ke email tersebut.</p>
+          <button class="identity-google" type="button" disabled title="Google OAuth diaktifkan setelah kredensial staging tersedia"><span aria-hidden="true">G</span>Lanjut dengan Google <em>segera</em></button>
+          <div class="identity-divider"><span>atau gunakan email</span></div>
+          <label class="identity-field">Email kerja<input name="email" type="email" autocomplete="email" required placeholder="nama@perusahaan.co.id" /></label>
+          <button class="identity-primary" type="submit">Kirim kode masuk</button><p class="identity-error" data-identity-error role="alert" hidden></p>
+          <small class="identity-safe-copy">Tidak perlu membuat password baru. Kode berlaku 10 menit dan hanya bisa dipakai sekali.</small>
+        </form>
+
+        <form class="identity-card" id="identity-code-form" data-identity-screen="code" hidden novalidate>
+          <button class="identity-back" type="button" data-identity-back>← Ganti email</button><div class="identity-step">Verifikasi email</div><h2>Masukkan kode masuk</h2><p>Kode untuk <strong data-login-email></strong>.</p>
+          <div class="identity-inbox-hint" role="note"><strong>Buka inbox email Anda</strong><span>Cari email dari DEKTA, lalu masukkan kode 6 digit yang tercantum. Periksa folder Spam atau Promosi jika belum terlihat.</span></div>
+          <div class="identity-demo-code" data-development-code hidden><span>Kode lokal</span><strong></strong><button type="button" data-use-development-code>Gunakan kode</button></div>
+          <label class="identity-field">Kode 6 digit<input name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" required placeholder="000000" /></label>
+          <label class="identity-field">Nama Anda<input name="displayName" autocomplete="name" maxlength="100" required placeholder="Contoh: Anggit" /></label>
+          <button class="identity-primary" type="submit">Verifikasi dan lanjut</button><p class="identity-error" data-identity-error role="alert" hidden></p>
+        </form>
+
+        <form class="identity-card identity-card-wide" id="identity-workspace-form" data-identity-screen="workspace" hidden novalidate>
+          <div class="identity-step">Langkah 2 dari 3</div><h2>Siapkan perusahaan Anda</h2><p>Perusahaan menjadi batas data utama. Anggota hanya melihat data workspace tempat mereka terdaftar.</p>
+          <div class="identity-mode-tabs" role="tablist" aria-label="Cara bergabung"><button class="is-active" type="button" role="tab" aria-selected="true" data-workspace-mode="create">Buat perusahaan</button><button type="button" role="tab" aria-selected="false" data-workspace-mode="join">Gabung undangan</button></div>
+          <div data-workspace-section="create">
+            <div class="identity-grid"><label class="identity-field identity-field-wide">Nama perusahaan<input name="name" autocomplete="organization" maxlength="120" required placeholder="Contoh: Fixit" /></label><label class="identity-field">Jenis usaha<select name="industry" required><option value="">Pilih jenis usaha</option><option value="professional_services">Jasa profesional & konsultasi</option><option value="retail">Retail & perdagangan</option><option value="hospitality">Hospitality</option><option value="manufacturing">Manufaktur</option><option value="technology">Teknologi</option><option value="other">Lainnya</option></select></label><label class="identity-field">Ukuran tim<select name="teamSize" required><option value="">Pilih jumlah orang</option><option value="1-5">1–5 orang</option><option value="6-20">6–20 orang</option><option value="21-50">21–50 orang</option><option value="51-200">51–200 orang</option><option value="200+">Lebih dari 200</option></select></label></div>
+            <fieldset class="identity-departments"><legend>Fungsi yang dipakai sekarang</legend><p>Bisa diubah lagi nanti. Manajemen selalu disiapkan.</p><label><input type="checkbox" name="departments" value="sales" checked /><span>Penjualan</span></label><label><input type="checkbox" name="departments" value="customer" checked /><span>Pelanggan</span></label><label><input type="checkbox" name="departments" value="marketing" /><span>Pemasaran</span></label><label><input type="checkbox" name="departments" value="delivery" checked /><span>Operasional</span></label><label><input type="checkbox" name="departments" value="finance" checked /><span>Keuangan</span></label></fieldset>
+            <fieldset class="identity-start-mode"><legend>Data awal</legend><label><input type="radio" name="startMode" value="sample" checked /><span><strong>Coba data contoh</strong><small>Paling cepat memahami alur.</small></span></label><label><input type="radio" name="startMode" value="empty" /><span><strong>Mulai kosong</strong><small>Masukkan data sendiri nanti.</small></span></label><label><input type="radio" name="startMode" value="import" /><span><strong>Siapkan impor</strong><small>Data masuk setelah ditinjau.</small></span></label></fieldset>
+            <button class="identity-primary" type="submit">Aktifkan trial 14 hari</button>
+          </div>
+          <div data-workspace-section="join" hidden><label class="identity-field">Kode undangan<textarea name="inviteCode" rows="4" autocomplete="off" placeholder="Tempel kode dari admin perusahaan"></textarea></label><button class="identity-primary" type="button" data-accept-invitation>Gabung ke perusahaan</button></div>
+          <p class="identity-error" data-identity-error role="alert" hidden></p><small class="identity-safe-copy">Trial dimulai setelah workspace aktif. Tidak ada kartu kredit atau tagihan pada tahap ini.</small>
+        </form>
+
+        <section class="identity-card identity-card-wide" data-identity-screen="invite" hidden>
+          <div class="identity-step">Langkah 3 dari 3</div><h2>Undang tim pertama</h2><p>Berikan akses sesuai fungsi kerja. Untuk mengganti undangan kedaluwarsa, buat undangan lagi dengan email yang sama. Kode lama tidak dapat digunakan.</p>
+          <form id="identity-invite-form" class="identity-invite-form" novalidate><label class="identity-field">Email anggota<input name="email" type="email" required placeholder="rekan@perusahaan.co.id" /></label><label class="identity-field">Peran<select name="role" required><option value="sales">Penjualan</option><option value="delivery">Operasional</option><option value="finance">Keuangan</option><option value="marketing">Pemasaran</option><option value="reviewer">Viewer / auditor</option><option value="billing_admin">Admin langganan</option></select></label><label class="identity-field">Departemen<select name="department" required></select></label><button class="identity-secondary" type="submit">Buat undangan</button></form>
+          <div class="identity-invite-result" data-invite-result role="status" aria-live="polite" hidden></div><p class="identity-error" data-identity-error role="alert" hidden></p><div class="identity-ready-summary" data-workspace-summary></div><button class="identity-primary" type="button" data-enter-workspace>Masuk ke dashboard</button><small class="identity-safe-copy">Di staging, undangan dikirim ke email penerima. Mode lokal menampilkan kode untuk pengujian.</small>
+        </section>
+
+        <section class="identity-card" data-identity-screen="offline" hidden><div class="identity-step">Server belum terhubung</div><h2>DEKTA belum dapat tersambung</h2><p>Periksa koneksi, tunggu sebentar, lalu coba kembali. Jika masalah berlanjut, hubungi pengelola workspace.</p><button class="identity-primary" type="button" data-retry-session>Coba lagi</button><p class="identity-error" data-identity-error role="alert" hidden></p></section>
+      </section>
+    </main>
+
+    <div class="app-shell" hidden>
+      <aside class="sidebar" id="sidebar" aria-label="Navigasi utama">
+        <div class="brand-lockup" aria-label="DEKTA, workspace perusahaan">
+          <img class="brand-mark" src="./assets/brand/dekta-symbol.svg" alt="" />
+          <span class="brand-identity"><strong>DEKTA</strong><small class="brand-company">Bisnis Saya</small></span>
+          <svg aria-hidden="true"><use href="#icon-chevron"></use></svg>
+        </div>
+
+        <nav class="primary-nav">
+          <button class="nav-item" type="button" data-dashboard-nav="summary" data-module-code="command" title="Ringkasan lintas departemen untuk owner dan pimpinan">
+            <svg><use href="#icon-command"></use></svg><span>Hari ini</span>
+          </button>
+          <button class="nav-item" type="button" data-view="relationships" data-nav-views="relationships,repeat" data-module-code="relationships" title="Database pelanggan, riwayat hubungan, dan peluang lanjutan">
+            <svg><use href="#icon-building"></use></svg><span>Pelanggan</span>
+          </button>
+          <button class="nav-item" type="button" data-view="pipeline" data-nav-views="signals,pipeline,experiments,partners" data-module-code="pipeline" title="Calon pelanggan, pipeline, kampanye, dan mitra dalam satu area">
+            <svg><use href="#icon-pipeline"></use></svg><span>Penjualan</span><span class="nav-count" id="pipeline-count">0</span>
+          </button>
+          <button class="nav-item" type="button" data-view="projects" data-module-code="projects" title="Kelola proyek, tugas, penanggung jawab, diskusi, dan biaya pekerjaan">
+            <svg><use href="#icon-delivery"></use></svg><span>Pekerjaan</span><span class="addon-dot" title="Add-on aktif">+</span>
+          </button>
+          <button class="nav-item" type="button" data-view="collection" data-nav-views="collection,contracts" data-module-code="collection" title="Tagihan, pembayaran, kontrak, dan pengeluaran dalam satu area">
+            <svg><use href="#icon-collection"></use></svg><span>Keuangan</span><span class="nav-alert" id="collection-count">0</span>
+          </button>
+          <button class="nav-item" type="button" data-view="reports" data-module-code="reports" title="Lihat angka bisnis beserta sumber dan batas perhitungannya">
+            <svg><use href="#icon-trend"></use></svg><span>Laporan</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-spacer"></div>
+        <div class="system-note">
+          <span class="system-pulse"></span>
+          <div>
+            <strong>Prototype lokal</strong>
+              <span>Data sampel · belum live</span>
+          </div>
+        </div>
+        <button class="reset-data-button" id="reset-sample-data" type="button">
+          <svg><use href="#icon-refresh"></use></svg><span>Reset data sampel</span>
+        </button>
+        <button class="nav-item nav-reference" type="button" data-view="adaptation" data-module-code="adaptation" title="Pengaturan perusahaan, tim, paket, dan integrasi">
+          <svg><use href="#icon-adaptation"></use></svg><span>Pusat kontrol</span>
+        </button>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar">
+          <button class="icon-button mobile-menu" id="mobile-menu" type="button" aria-label="Buka navigasi" aria-expanded="false" aria-controls="sidebar">
+            <svg><use href="#icon-menu"></use></svg>
+          </button>
+          <label class="search-wrap topbar-search" title="Cari pelanggan, peluang, tagihan, atau pekerjaan">
+            <svg><use href="#icon-search"></use></svg>
+            <span class="sr-only">Cari data workspace</span>
+            <input id="global-search" type="search" placeholder="Cari pelanggan, invoice, pekerjaan…" autocomplete="off" />
+            <kbd>⌘ K</kbd>
+          </label>
+          <div class="topbar-actions">
+            <span class="sr-only" id="data-authority-announcement">Sebagian modul masih memakai data contoh</span>
+            <button class="icon-button topbar-utility" id="open-calendar" type="button" aria-label="Buka kalender" title="Kalender kerja"><svg><use href="#icon-calendar"></use></svg></button>
+            <button class="icon-button topbar-utility notification-button" id="open-notifications" type="button" aria-label="Buka notifikasi" title="Notifikasi"><svg><use href="#icon-alert"></use></svg><span class="utility-count" id="notification-count">0</span></button>
+            <button class="icon-button topbar-utility" id="open-help" type="button" aria-label="Buka bantuan" title="Bantuan penggunaan">?</button>
+            <button class="profile-switcher" id="open-identity" type="button" title="Lihat akun, perusahaan, role, dan status trial">
+              <span class="avatar">AN</span>
+              <span><strong>Anggit</strong><small>Owner</small></span>
+              <svg><use href="#icon-chevron"></use></svg>
+            </button>
+            <details class="create-menu">
+              <summary class="primary-button topbar-create" aria-label="Buat baru"><svg><use href="#icon-plus"></use></svg><span>Buat baru</span><svg class="create-chevron"><use href="#icon-chevron"></use></svg></summary>
+              <div class="create-menu-popover" role="menu" aria-label="Pilih data yang akan dibuat">
+                <button type="button" data-create-record="customer" role="menuitem"><svg><use href="#icon-building"></use></svg><span><strong>Pelanggan</strong><small>Tambah ke database</small></span></button>
+                <button type="button" id="add-opportunity" role="menuitem"><svg><use href="#icon-pipeline"></use></svg><span><strong>Peluang</strong><small>Catat kebutuhan dan nilai</small></span></button>
+                <button type="button" data-create-record="project" role="menuitem"><svg><use href="#icon-delivery"></use></svg><span><strong>Pekerjaan</strong><small>Mulai proyek pelanggan</small></span></button>
+                <button type="button" data-create-record="invoice" role="menuitem"><svg><use href="#icon-file"></use></svg><span><strong>Tagihan</strong><small>Buat invoice baru</small></span></button>
+              </div>
+            </details>
+          </div>
+        </header>
+
+        <main id="main-content" tabindex="-1">
+          <div id="view-root"></div>
+        </main>
+      </section>
+    </div>
+
+    <div class="mobile-backdrop" id="mobile-backdrop" hidden></div>
+
+    <dialog class="onboarding-dialog" id="onboarding-dialog" aria-labelledby="onboarding-title">
+      <form id="onboarding-form" novalidate>
+        <aside class="onboarding-rail" aria-label="Tahapan pengaturan">
+          <div class="onboarding-brand"><img src="./assets/brand/dekta-symbol.svg" alt="" /><div><strong>DEKTA</strong><small>by Fixit Industries</small></div></div>
+          <div>
+            <p class="section-kicker">Siapkan workspace</p>
+            <h2 id="onboarding-title">Mulai tanpa bingung.</h2>
+            <p>Kami tuntun dari akun sampai data pertama. Pengaturan ini bisa diubah lagi oleh admin.</p>
+          </div>
+          <ol class="onboarding-steps">
+            <li class="is-active" data-onboarding-indicator="1"><span>1</span><div><strong>Akun</strong><small>Cara masuk</small></div></li>
+            <li data-onboarding-indicator="2"><span>2</span><div><strong>Perusahaan</strong><small>Workspace bersama</small></div></li>
+            <li data-onboarding-indicator="3"><span>3</span><div><strong>Tim & akses</strong><small>Departemen dan role</small></div></li>
+            <li data-onboarding-indicator="4"><span>4</span><div><strong>Data awal</strong><small>Mulai bekerja</small></div></li>
+          </ol>
+          <p class="onboarding-security-note">Data sampel tidak pernah dicampur dengan data perusahaan.</p>
+        </aside>
+
+        <section class="onboarding-main">
+          <header class="onboarding-head">
+            <span id="onboarding-progress">Langkah 1 dari 4</span>
+            <button class="icon-button" type="button" data-close-onboarding aria-label="Tutup pengaturan"><svg><use href="#icon-close"></use></svg></button>
+          </header>
+
+          <div class="onboarding-page is-active" data-onboarding-step="1">
+            <div class="onboarding-copy"><span class="section-kicker">Akun Anda</span><h3>Masuk dengan cara yang paling nyaman</h3><p>Gunakan Google agar lebih cepat, atau email kerja jika perusahaan Anda memerlukannya.</p></div>
+            <button class="google-auth-button" id="google-auth-demo" type="button"><span class="google-mark" aria-hidden="true">G</span><span>Lanjut dengan Google</span><small>Disarankan</small></button>
+            <div class="form-divider"><span>atau pakai email</span></div>
+            <div class="onboarding-fields two-columns">
+              <label class="field">Nama lengkap<input name="fullName" autocomplete="name" required placeholder="Contoh: Anggit Prasetyo" /></label>
+              <label class="field">Email kerja<input name="email" type="email" autocomplete="email" required placeholder="nama@perusahaan.co.id" /></label>
+            </div>
+            <p class="inline-help">Prototype ini tidak mengirim atau menyimpan password. Autentikasi nyata dipilih saat arsitektur staging disetujui.</p>
+          </div>
+
+          <div class="onboarding-page" data-onboarding-step="2" hidden>
+            <div class="onboarding-copy"><span class="section-kicker">Workspace perusahaan</span><h3>Buat baru atau bergabung</h3><p>Satu perusahaan menjadi batas data utama. Cabang dan unit dapat ditambahkan setelah workspace aktif.</p></div>
+            <div class="choice-grid">
+              <label class="choice-card"><input type="radio" name="companyMode" value="create" checked /><span><strong>Buat perusahaan baru</strong><small>Saya akan menjadi admin pertama.</small></span></label>
+              <label class="choice-card"><input type="radio" name="companyMode" value="join" /><span><strong>Gabung lewat undangan</strong><small>Gunakan kode dari admin perusahaan.</small></span></label>
+            </div>
+            <div class="onboarding-fields two-columns" data-company-mode="create">
+              <label class="field field-wide">Nama perusahaan<input name="companyName" autocomplete="organization" required placeholder="Contoh: Toko Sejahtera Indonesia" /></label>
+              <label class="field">Jenis usaha<select name="industry" required><option value="">Pilih jenis usaha</option><option>Jasa profesional</option><option>Retail & perdagangan</option><option>Hospitality</option><option>Manufaktur</option><option>Teknologi</option><option>Lainnya</option></select></label>
+              <label class="field">Ukuran tim<select name="companySize" required><option value="">Pilih jumlah orang</option><option>1–5 orang</option><option>6–20 orang</option><option>21–50 orang</option><option>51–200 orang</option><option>Lebih dari 200</option></select></label>
+            </div>
+            <div class="onboarding-fields" data-company-mode="join" hidden>
+              <label class="field">Kode undangan<input name="inviteCode" autocomplete="one-time-code" placeholder="Contoh: DEKTA-7K2M" /></label>
+            </div>
+          </div>
+
+          <div class="onboarding-page" data-onboarding-step="3" hidden>
+            <div class="onboarding-copy"><span class="section-kicker">Tim dan akses</span><h3>Pilih fungsi kerja, bukan sekadar jabatan</h3><p>Satu orang boleh membantu beberapa departemen. Hak menyetujui tetap diberikan terpisah agar aman.</p></div>
+            <fieldset class="department-presets"><legend>Cara kerja tim Anda</legend>
+              <label><input type="radio" name="departmentPreset" value="owner" checked /><span><strong>Saya mengelola semuanya</strong><small>Siapkan seluruh fungsi; pengaturan rinci bisa nanti.</small></span></label>
+              <label><input type="radio" name="departmentPreset" value="sales" /><span><strong>Tim penjualan</strong><small>Mulai dari calon pelanggan, peluang, dan hubungan pelanggan.</small></span></label>
+              <label><input type="radio" name="departmentPreset" value="custom" /><span><strong>Pilih sendiri</strong><small>Tentukan fungsi satu per satu sesuai struktur perusahaan.</small></span></label>
+            </fieldset>
+            <p class="department-preset-summary" id="department-preset-summary" aria-live="polite">5 fungsi disiapkan. Bisa diubah nanti.</p>
+            <fieldset class="department-picker" hidden><legend>Pilih fungsi yang akan digunakan</legend>
+              <label><input type="checkbox" name="departments" value="Sales" checked /><span><strong>Penjualan</strong><small>Calon pelanggan dan peluang</small></span></label>
+              <label><input type="checkbox" name="departments" value="Customer" checked /><span><strong>Pelanggan</strong><small>Hubungan dan kebutuhan baru</small></span></label>
+              <label><input type="checkbox" name="departments" value="Marketing" checked /><span><strong>Pemasaran</strong><small>Kampanye dan sumber pelanggan</small></span></label>
+              <label><input type="checkbox" name="departments" value="Finance" checked /><span><strong>Keuangan</strong><small>Tagihan dan pembayaran</small></span></label>
+              <label><input type="checkbox" name="departments" value="Delivery" checked /><span><strong>Operasional</strong><small>Kesiapan dan pelaksanaan kerja</small></span></label>
+            </fieldset>
+            <div class="onboarding-fields two-columns">
+              <label class="field">Fokus utama Anda<select name="primaryDepartment" required><option value="Owner / Ringkasan">Pemilik / Ringkasan</option><option value="Sales">Penjualan</option><option value="Pelanggan">Pelanggan</option><option value="Marketing">Pemasaran</option><option value="Finance">Keuangan</option><option value="Delivery">Operasional</option></select></label>
+              <label class="field">Peran awal<select name="initialRole" required><option>Admin perusahaan</option><option>Manajer departemen</option><option>Anggota tim</option><option>Viewer / auditor</option></select></label>
+              <label class="field field-wide">Undang tim sekarang <span class="optional-label">opsional</span><textarea name="teamEmails" rows="3" placeholder="Satu email per baris. Undangan baru dikirim setelah staging terhubung layanan email."></textarea></label>
+            </div>
+          </div>
+
+          <div class="onboarding-page" data-onboarding-step="4" hidden>
+            <div class="onboarding-copy"><span class="section-kicker">Data awal</span><h3>Pilih titik mulai yang aman</h3><p>Anda bisa mencoba dengan contoh, memulai kosong, atau menyiapkan impor. Data belum dianggap live sebelum lolos pemeriksaan.</p></div>
+            <div class="start-mode-grid">
+              <label class="start-mode"><input type="radio" name="startMode" value="sample" checked /><span><strong>Coba data contoh</strong><small>Paling cepat memahami alur. Bisa dihapus kapan saja.</small><em>Disarankan</em></span></label>
+              <label class="start-mode"><input type="radio" name="startMode" value="empty" /><span><strong>Mulai kosong</strong><small>Input pelanggan dan prospek satu per satu.</small></span></label>
+              <label class="start-mode"><input type="radio" name="startMode" value="import" /><span><strong>Siapkan impor Excel</strong><small>Unduh template, validasi, lalu review sebelum masuk.</small></span></label>
+            </div>
+            <div class="onboarding-summary" id="onboarding-summary" aria-live="polite"></div>
+            <p class="inline-help">Tidak ada pembayaran di tahap ini. Trial dimulai setelah workspace aktif; paket dipilih setelah tim sempat merasakan manfaat.</p>
+          </div>
+
+          <div class="onboarding-errors" id="onboarding-errors" role="alert" hidden></div>
+          <footer class="onboarding-actions">
+            <button class="text-button" id="onboarding-back" type="button" hidden>Kembali</button>
+            <span></span>
+            <button class="primary-button" id="onboarding-next" type="button">Lanjut</button>
+          </footer>
+        </section>
+      </form>
+    </dialog>
+
+    <dialog class="modal" id="opportunity-dialog" aria-labelledby="opportunity-title">
+      <form method="dialog" id="opportunity-form" novalidate>
+        <div class="modal-head">
+          <div>
+            <span class="section-kicker">Peluang pelanggan</span>
+            <h2 id="opportunity-title">Tambah peluang</h2>
+            <p>Catat siapa pelanggannya, apa kebutuhannya, dan kapan akan dihubungi lagi.</p>
+          </div>
+          <button class="icon-button" type="button" data-close-dialog aria-label="Tutup dialog"><svg><use href="#icon-close"></use></svg></button>
+        </div>
+        <div class="form-grid">
+          <label class="field field-wide">Pelanggan
+            <select name="accountId" required><option value="">Pilih pelanggan</option></select>
+            <span class="field-error"></span>
+          </label>
+          <label class="field">Layanan
+            <select name="service" required>
+              <option value="">Pilih layanan</option>
+              <option>Website & Acquisition</option>
+              <option>ERP & Commerce</option>
+              <option>Operations App</option>
+              <option>SEO Growth</option>
+              <option>Brand & Web</option>
+            </select>
+            <span class="field-error"></span>
+          </label>
+          <label class="field">Tahap
+            <select name="stage" required>
+              <option value="Qualified">Layak ditindaklanjuti</option>
+              <option value="Discovery">Memahami kebutuhan</option>
+              <option value="Solution">Menyiapkan solusi</option>
+              <option value="Proposal">Penawaran dikirim</option>
+              <option value="Decision">Menunggu keputusan</option>
+            </select>
+          </label>
+          <label class="field">Nilai indikatif
+            <span class="input-prefix"><span>Rp</span><input name="value" type="number" min="0" step="1000000" required placeholder="50000000" /></span>
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide">Janji atau langkah berikutnya
+            <input name="nextAction" required placeholder="Contoh: kirim ringkasan kebutuhan dan jadwal demo" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field">Jatuh tempo
+            <input name="due" type="date" required />
+            <span class="field-error"></span>
+          </label>
+          <label class="field">Penanggung jawab
+            <select name="ownerUserId" required></select>
+            <span class="field-error"></span>
+          </label>
+          <div class="control-errors field-wide" id="opportunity-errors" role="alert" aria-live="assertive" hidden></div>
+        </div>
+        <div class="modal-actions">
+          <button class="text-button" type="button" data-close-dialog>Batal</button>
+          <button class="primary-button" type="submit">Simpan peluang</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="modal detail-dialog" id="detail-dialog" aria-labelledby="detail-title">
+      <div id="detail-content"></div>
+    </dialog>
+
+    <dialog class="modal record-dialog" id="record-dialog" aria-labelledby="record-title">
+      <form method="dialog" id="record-form" novalidate>
+        <div id="record-form-content"></div>
+      </form>
+    </dialog>
+
+    <dialog class="modal control-dialog" id="control-dialog" aria-labelledby="control-title">
+      <form method="dialog" id="control-form" novalidate>
+        <div class="modal-head">
+          <div>
+            <span class="section-kicker">Perbarui peluang</span>
+            <h2 id="control-title">Catat perkembangan</h2>
+            <p id="control-context">Setiap perubahan menyimpan alasan, tanggal, dan orang yang mengubahnya.</p>
+          </div>
+          <button class="icon-button" type="button" data-close-control aria-label="Tutup dialog"><svg><use href="#icon-close"></use></svg></button>
+        </div>
+        <div class="control-form-grid">
+          <label class="field field-wide">Tindakan
+            <select name="controlType">
+              <option value="next_action">Perbarui atau jadwalkan ulang tindak lanjut</option>
+              <option value="stage">Ubah tahap peluang</option>
+              <option value="hold">Tunda dengan tanggal peninjauan</option>
+              <option value="lost">Tutup sebagai tidak lanjut</option>
+              <option value="reactivate">Aktifkan kembali</option>
+            </select>
+          </label>
+          <label class="field control-field" data-control-types="stage reactivate">Tahap tujuan
+            <select name="targetStage"><option value="Qualified">Layak ditindaklanjuti</option><option value="Discovery">Memahami kebutuhan</option><option value="Solution">Menyiapkan solusi</option><option value="Proposal">Penawaran dikirim</option><option value="Decision">Menunggu keputusan</option></select>
+            <span class="field-error"></span>
+          </label>
+          <label class="field control-field" data-control-types="lost">Alasan lost
+            <select name="lostReason"><option value="">Pilih alasan</option><option>Budget / timing</option><option>Tidak ada respons</option><option>Tidak cocok</option><option>Memilih kompetitor</option><option>Prioritas internal berubah</option><option>Lainnya</option></select>
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide control-field" data-control-types="stage">Bukti / alasan perpindahan stage
+            <textarea name="evidence" rows="3" placeholder="Apa yang membuktikan stage ini layak?"></textarea>
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide control-field" data-control-types="stage">Referensi proposal / keputusan
+            <input name="reference" placeholder="Contoh: SAMPLE/PROP/002" />
+            <span class="field-hint">Wajib saat peluang masuk Penawaran atau Keputusan.</span>
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide control-field" data-control-types="next_action stage reactivate">Janji atau langkah berikutnya
+            <input name="nextAction" placeholder="Tindakan spesifik berikutnya" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field control-field" data-control-types="next_action stage reactivate">Jatuh tempo
+            <input name="due" type="date" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field control-field" data-control-types="hold">Tanggal review
+            <input name="reviewDate" type="date" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide control-field" data-control-types="next_action hold lost reactivate"><span data-reason-label>Alasan perubahan</span>
+            <textarea name="reason" rows="3" placeholder="Alasan yang akan masuk activity trail"></textarea>
+            <span class="field-error"></span>
+          </label>
+          <label class="override-control control-field" data-control-types="stage">
+            <input name="override" type="checkbox" />
+            <span><strong>Executive override</strong><small>Gunakan hanya saat rule belum terpenuhi dan alasannya dapat dipertanggungjawabkan.</small></span>
+          </label>
+          <label class="field field-wide" data-override-reason hidden>Alasan override
+            <textarea name="overrideReason" rows="3" placeholder="Mengapa progres tetap perlu dilakukan?"></textarea>
+            <span class="field-error"></span>
+          </label>
+          <div class="control-errors field-wide" id="control-errors" role="alert" aria-live="assertive" hidden></div>
+        </div>
+        <div class="modal-actions"><button class="text-button" type="button" data-close-control>Batal</button><button class="primary-button" type="submit">Simpan perubahan</button></div>
+      </form>
+    </dialog>
+
+    <dialog class="modal handoff-dialog" id="handoff-dialog" aria-labelledby="handoff-title">
+      <form method="dialog" id="handoff-form" novalidate>
+        <div class="modal-head">
+          <div>
+            <span class="section-kicker">Kesepakatan dan kesiapan kerja</span>
+            <h2 id="handoff-title">Siapkan pekerjaan pelanggan</h2>
+            <p id="handoff-context">Persetujuan pelanggan perlu bukti. Tim operasional tetap memeriksa apakah pekerjaan siap dimulai.</p>
+          </div>
+          <button class="icon-button" type="button" data-close-handoff aria-label="Tutup dialog"><svg><use href="#icon-close"></use></svg></button>
+        </div>
+        <div class="handoff-form-grid">
+          <section class="handoff-principle field-wide" aria-label="Batas pengakuan">
+            <strong>Disetujui ≠ ditagihkan ≠ dibayar</strong>
+            <span>Form ini mencatat kesepakatan dan kesiapan pekerjaan. Form ini tidak menerbitkan tagihan atau mengakui pembayaran.</span>
+          </section>
+
+          <label class="field handoff-field" data-handoff-modes="submit">Referensi komitmen
+            <input name="commitmentReference" placeholder="Contoh: PO/2026/014" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field handoff-field" data-handoff-modes="submit">Tanggal komitmen
+            <input name="commitmentDate" type="date" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide handoff-field" data-handoff-modes="submit">Nilai terkontrak
+            <span class="input-prefix"><span>Rp</span><input name="contractedValue" type="number" min="1" step="1000000" /></span>
+            <span class="field-error"></span>
+          </label>
+
+          <label class="field field-wide handoff-field" data-handoff-modes="submit resubmit">Pekerjaan yang disepakati
+            <textarea name="scope" rows="3" placeholder="Hasil yang diharapkan, batas pekerjaan, dan tahapan yang termasuk"></textarea>
+            <span class="field-error"></span>
+          </label>
+          <label class="field handoff-field" data-handoff-modes="submit resubmit">Penanggung jawab pelanggan
+            <input name="clientPIC" autocomplete="name" placeholder="Nama dan peran" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field handoff-field" data-handoff-modes="submit resubmit">Penanggung jawab operasional
+            <select name="deliveryOwner"></select>
+            <span class="field-error"></span>
+          </label>
+          <label class="field handoff-field" data-handoff-modes="submit resubmit">Target mulai
+            <input name="targetStartDate" type="date" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide handoff-field" data-handoff-modes="submit resubmit">Kebutuhan pendukung
+            <textarea name="dependencies" rows="3" placeholder="Satu item per baris; tulis ‘Tidak ada’ bila nihil"></textarea>
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide handoff-field" data-handoff-modes="submit resubmit">Batasan
+            <textarea name="constraints" rows="3" placeholder="Batas pekerjaan, waktu, akses, atau keputusan; tulis ‘Tidak ada’ bila nihil"></textarea>
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide handoff-field" data-handoff-modes="resubmit">Ringkasan perbaikan
+            <textarea name="resolutionNote" rows="3" placeholder="Apa yang berubah sejak handoff dikembalikan?"></textarea>
+            <span class="field-error"></span>
+          </label>
+
+          <label class="field handoff-field" data-handoff-modes="review">Keputusan operasional
+            <select name="decision"><option value="accept">Terima pekerjaan</option><option value="reject">Kembalikan untuk dilengkapi</option></select>
+            <span class="field-error"></span>
+          </label>
+          <label class="field handoff-field" data-handoff-modes="review">Pemeriksa operasional
+            <select name="reviewer"></select>
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide handoff-field" data-handoff-modes="review">Catatan pemeriksaan
+            <textarea name="reviewNote" rows="3" placeholder="Alasan menerima atau mengembalikan pekerjaan"></textarea>
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide handoff-field" data-handoff-modes="review" data-review-decision="reject">Item yang perlu diperbaiki
+            <textarea name="missingItems" rows="3" placeholder="Satu item per baris"></textarea>
+            <span class="field-error"></span>
+          </label>
+          <label class="field handoff-field" data-handoff-modes="review" data-review-decision="reject">Batas perbaikan
+            <input name="returnDue" type="date" />
+            <span class="field-error"></span>
+          </label>
+
+          <div class="control-errors field-wide" id="handoff-errors" role="alert" aria-live="assertive" hidden></div>
+        </div>
+        <div class="modal-actions"><button class="text-button" type="button" data-close-handoff>Batal</button><button class="primary-button" id="handoff-submit" type="submit">Ajukan pekerjaan</button></div>
+      </form>
+    </dialog>
+
+    <dialog class="modal governance-dialog" id="governance-dialog" aria-labelledby="governance-title">
+      <form method="dialog" id="governance-form" novalidate>
+        <div class="modal-head">
+          <div>
+            <span class="section-kicker">Record governance</span>
+            <h2 id="governance-title">Atur governance</h2>
+            <p id="governance-context">Tindakan administratif harus terlihat, beralasan, dan dapat dipulihkan.</p>
+          </div>
+          <button class="icon-button" type="button" data-close-governance aria-label="Tutup dialog"><svg><use href="#icon-close"></use></svg></button>
+        </div>
+        <div class="governance-form-grid">
+          <section class="governance-principle field-wide" id="governance-principle" aria-live="polite"></section>
+          <label class="field field-wide governance-field" data-governance-modes="priority archive">Tindakan governance
+            <select name="action"><option value="priority">Priority override</option><option value="archive">Archive record</option></select>
+          </label>
+          <label class="field governance-field" data-governance-modes="priority">Arah prioritas
+            <select name="direction"><option value="promote">Naikkan prioritas</option><option value="defer">Turunkan prioritas</option></select>
+            <span class="field-error"></span>
+          </label>
+          <label class="field governance-field" data-governance-modes="priority">Berlaku sampai
+            <input name="expiresAt" type="date" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide"><span id="governance-reason-label">Alasan tindakan</span>
+            <textarea name="reason" rows="4" placeholder="Konteks keputusan yang harus dapat diaudit"></textarea>
+            <span class="field-error"></span>
+          </label>
+          <div class="control-errors field-wide" id="governance-errors" role="alert" aria-live="assertive" hidden></div>
+        </div>
+        <div class="modal-actions governance-actions">
+          <button class="text-button clear-priority-button" id="clear-priority" type="button" hidden>Cabut override</button>
+          <span class="modal-action-spacer"></span>
+          <button class="text-button" type="button" data-close-governance>Batal</button>
+          <button class="primary-button" id="governance-submit" type="submit">Simpan override</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="modal" id="signal-dialog" aria-labelledby="signal-title">
+      <form method="dialog" id="signal-form" novalidate>
+        <div class="modal-head">
+          <div>
+            <span class="section-kicker">Calon pelanggan</span>
+            <h2 id="signal-title">Catat kebutuhan baru</h2>
+            <p id="signal-context">Informasi awal boleh belum lengkap. Kebutuhan ini belum menjadi peluang sampai tim meninjaunya.</p>
+          </div>
+          <button class="icon-button" type="button" data-close-signal aria-label="Tutup dialog"><svg><use href="#icon-close"></use></svg></button>
+        </div>
+        <div class="form-grid">
+          <label class="field field-wide">Nama akun atau usaha
+            <input name="account" autocomplete="organization" required placeholder="Contoh: Bima Teknik" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field">Kontak awal
+            <input name="contact" autocomplete="name" placeholder="Boleh belum diketahui" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field">Sumber
+            <select name="source" required>
+              <option value="">Pilih sumber</option>
+              <option value="Referral">Referal</option><option value="Organic search">Pencarian Google</option><option value="Google Maps">Google Maps</option><option value="Instagram">Instagram</option><option value="Outbound">Dicari tim</option><option value="Partner">Mitra</option><option value="Existing client">Pelanggan lama</option><option value="Unknown">Belum diketahui</option>
+            </select>
+            <span class="field-error"></span>
+          </label>
+          <label class="field">Cara ditindaklanjuti
+            <select name="followUpMethod" required>
+              <option value="whatsapp">WhatsApp</option>
+              <option value="phone">Telepon</option>
+              <option value="email">Email</option>
+              <option value="field_visit">Kunjungan lapangan</option>
+              <option value="other">Lainnya</option>
+            </select>
+            <small class="field-hint">Sumber prospek tidak menentukan cara tim menghubunginya.</small>
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide">Kebutuhan yang disampaikan
+            <input name="need" required placeholder="Apa yang terlihat atau diminta?" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field canvassing-field" hidden>Area / wilayah
+            <input name="area" placeholder="Contoh: Sleman Barat" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field canvassing-field" hidden>Alamat kunjungan
+            <input name="address" autocomplete="street-address" placeholder="Alamat atau titik Google Maps" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field canvassing-field" hidden>Rencana kunjungan
+            <input name="visitAt" type="datetime-local" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field canvassing-field" hidden>Urutan rute
+            <input name="routeOrder" type="number" min="1" placeholder="1" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field">Penanggung jawab
+            <select name="owner" required></select>
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide">Catatan bukti
+            <textarea name="note" rows="3" placeholder="Konteks, sumber, dan apa yang masih belum diketahui"></textarea>
+          </label>
+        </div>
+        <div class="modal-actions"><button class="text-button" type="button" data-close-signal>Batal</button><button class="primary-button" type="submit">Simpan calon pelanggan</button></div>
+      </form>
+    </dialog>
+
+    <dialog class="modal signal-triage-dialog" id="signal-triage-dialog" aria-labelledby="signal-triage-title">
+      <form method="dialog" id="signal-triage-form" novalidate>
+        <div class="modal-head">
+          <div>
+            <span class="section-kicker">Tinjau kebutuhan</span>
+            <h2 id="signal-triage-title">Pilih langkah berikutnya</h2>
+            <p id="signal-triage-context">Pilih tindakan yang paling sesuai dengan kondisi calon pelanggan saat ini.</p>
+          </div>
+          <button class="icon-button" type="button" data-close-signal-triage aria-label="Tutup dialog"><svg><use href="#icon-close"></use></svg></button>
+        </div>
+        <div class="signal-triage-grid">
+          <section class="triage-principle field-wide" id="signal-triage-principle" aria-live="polite"></section>
+          <label class="field field-wide">Keputusan
+            <select name="action">
+              <option value="qualify">Lanjutkan — buat peluang</option>
+              <option value="nurture">Hubungi nanti — buat jadwal baru</option>
+              <option value="disqualify">Tidak lanjut — simpan alasannya</option>
+              <option value="reactivate">Buka kembali</option>
+            </select>
+          </label>
+
+          <label class="field triage-field" data-triage-modes="qualify">Layanan yang relevan
+            <select name="service">
+              <option value="">Pilih layanan</option>
+              <option>Website &amp; Acquisition</option><option>ERP &amp; Commerce</option><option>Operations App</option><option>SEO Growth</option><option>Brand &amp; Web</option>
+            </select>
+            <span class="field-error"></span>
+          </label>
+          <label class="field triage-field" data-triage-modes="qualify">Nilai indikatif
+            <span class="input-prefix"><span>Rp</span><input name="value" type="number" min="0" step="1000000" placeholder="50000000" /></span>
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide triage-field" data-triage-modes="qualify">Janji atau langkah berikutnya
+            <input name="nextAction" placeholder="Tindakan spesifik yang mengubah status" />
+            <span class="field-error"></span>
+          </label>
+          <label class="field triage-field" data-triage-modes="qualify">Jatuh tempo
+            <input name="due" type="date" />
+            <span class="field-error"></span>
+          </label>
+
+          <label class="field field-wide triage-field" data-triage-modes="nurture">Kenapa belum dikejar sekarang?
+            <textarea name="nurtureReason" rows="3" placeholder="Contoh: menunggu penyusunan anggaran semester baru"></textarea>
+            <span class="field-error"></span>
+          </label>
+          <label class="field triage-field" data-triage-modes="nurture">Hubungi lagi tanggal
+            <input name="reviewDate" type="date" />
+            <span class="field-error"></span>
+          </label>
+
+          <label class="field triage-field" data-triage-modes="disqualify">Alasan utama
+            <select name="disqualifyReason"><option value="">Pilih alasan</option></select>
+            <span class="field-error"></span>
+          </label>
+          <label class="field field-wide triage-field" data-triage-modes="disqualify">Catatan tambahan
+            <textarea name="disqualifyNote" rows="3" placeholder="Opsional, kecuali memilih alasan Lainnya"></textarea>
+            <span class="field-error"></span>
+          </label>
+
+          <label class="field field-wide triage-field" data-triage-modes="reactivate">Apa yang berubah?
+            <textarea name="reactivateReason" rows="3" placeholder="Bukti atau konteks baru yang membuat kebutuhan ini layak dibuka lagi"></textarea>
+            <span class="field-error"></span>
+          </label>
+
+          <section class="triage-history field-wide" id="signal-triage-history"></section>
+          <div class="control-errors field-wide" id="signal-triage-errors" role="alert" aria-live="assertive" hidden></div>
+        </div>
+        <div class="modal-actions"><button class="text-button" type="button" data-close-signal-triage>Batal</button><button class="primary-button" id="signal-triage-submit" type="submit">Simpan keputusan</button></div>
+      </form>
+    </dialog>
+
+    <dialog class="modal reset-dialog" id="reset-dialog" aria-labelledby="reset-title">
+      <div class="modal-head">
+        <div>
+          <span class="section-kicker">Prototype lokal</span>
+          <h2 id="reset-title">Kembalikan data sampel?</h2>
+          <p>Semua perubahan yang dibuat di browser ini akan diganti dengan data sintetis awal. Tindakan ini tidak menyentuh CRM atau sistem live.</p>
+        </div>
+        <button class="icon-button" type="button" data-close-reset aria-label="Tutup dialog"><svg><use href="#icon-close"></use></svg></button>
+      </div>
+      <div class="reset-dialog-body">
+        <strong>Yang akan direset</strong>
+        <p>Calon pelanggan, peluang, riwayat aktivitas, kesiapan pekerjaan, kampanye, tagihan, dan pembayaran lokal.</p>
+      </div>
+      <div class="modal-actions"><button class="text-button" type="button" data-close-reset>Batal</button><button class="danger-button" id="confirm-reset" type="button">Ya, reset data sampel</button></div>
+    </dialog>
+
+    <dialog class="modal identity-account-dialog" id="identity-account-dialog" aria-labelledby="identity-account-title">
+      <div class="modal-head"><div><span class="section-kicker">Akun & workspace</span><h2 id="identity-account-title">Sesi Anda</h2><p>Identitas, perusahaan, dan hak akses berasal dari server.</p></div><button class="icon-button" type="button" data-close-identity-account aria-label="Tutup"><svg><use href="#icon-close"></use></svg></button></div>
+      <div class="identity-account-body" data-identity-account-body></div>
+      <div class="modal-actions"><button class="text-button" type="button" data-close-identity-account>Tutup</button><button class="danger-button" type="button" data-logout-session>Keluar dari DEKTA</button></div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    <script type="module" src="./app.js?v=0.1.14"></script>
+  </body>
+</html>

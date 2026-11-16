@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">DEKTA</title>
+  <desc id="desc">Pelanggan dekat. Kerja tertata. Pendapatan terjaga.</desc>
+  <rect width="1200" height="630" fill="#0F172A"/>
+  <circle cx="1060" cy="60" r="340" fill="#A33DC3" opacity=".18"/>
+  <circle cx="1150" cy="570" r="300" fill="#E24092" opacity=".12"/>
+  <g transform="translate(970 130)">
+    <rect width="92" height="16" rx="8" fill="#FFFFFF" opacity=".9"/>
+    <rect x="28" y="34" width="126" height="16" rx="8" fill="#E24092" opacity=".9"/>
+    <rect x="64" y="68" width="90" height="16" rx="8" fill="#A33DC3" opacity=".9"/>
+  </g>
+  <g transform="translate(96 102) scale(1.5)">
+    <rect width="64" height="64" rx="16" fill="#A33DC3"/>
+    <rect x="14" y="14" width="10" height="36" rx="5" fill="#FFFFFF"/>
+    <path d="M25 14h8c10.2 0 17 6.8 17 17H40c0-4.2-2.8-7-7-7h-8V14Z" fill="#FFFFFF"/>
+    <path d="M25 40h8c4.2 0 7-2.8 7-7h10c0 10.2-6.8 17-17 17h-8V40Z" fill="#FFFFFF"/>
+  </g>
+  <text x="222" y="175" fill="#fff" font-family="Inter, Plus Jakarta Sans, Arial, sans-serif" font-size="70" font-weight="800" letter-spacing="2">DEKTA</text>
+  <text x="96" y="340" fill="#fff" font-family="Inter, Plus Jakarta Sans, Arial, sans-serif" font-size="54" font-weight="700">Pelanggan dekat.</text>
+  <text x="96" y="410" fill="#fff" font-family="Inter, Plus Jakarta Sans, Arial, sans-serif" font-size="54" font-weight="700">Kerja tertata.</text>
+  <text x="96" y="480" fill="#F6B6D5" font-family="Inter, Plus Jakarta Sans, Arial, sans-serif" font-size="54" font-weight="700">Pendapatan terjaga.</text>
+  <text x="98" y="550" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="24">Aplikasi pelanggan dan operasional bisnis · by Fixit Industries</text>
+</svg>

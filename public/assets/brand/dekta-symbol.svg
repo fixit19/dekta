@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Simbol DEKTA</title>
+  <desc id="desc">Tiga modul membentuk ruang kerja terbuka, melambangkan hubungan pelanggan yang bergerak melalui tahapan bisnis yang tertata.</desc>
+  <rect width="64" height="64" rx="16" fill="#A33DC3"/>
+  <rect x="14" y="14" width="10" height="36" rx="5" fill="#FFFFFF"/>
+  <path d="M25 14h8c10.2 0 17 6.8 17 17H40c0-4.2-2.8-7-7-7h-8V14Z" fill="#FFFFFF"/>
+  <path d="M25 40h8c4.2 0 7-2.8 7-7h10c0 10.2-6.8 17-17 17h-8V40Z" fill="#FFFFFF"/>
+</svg>

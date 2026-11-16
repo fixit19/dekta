@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+.growth-os-local/
+*.log
+.DS_Store

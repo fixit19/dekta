@@ -1,0 +1,23 @@
+services:
+  dekta:
+    build:
+      context: https://github.com/fixit19/dekta.git#v0.1.0
+    environment:
+      NODE_ENV: staging
+      HOST: 0.0.0.0
+      PORT: "4180"
+      DEKTA_AUTH_MODE: email
+      DEKTA_DATABASE_SSL: require
+      DEKTA_PUBLIC_BASE_URL: "${DEKTA_PUBLIC_BASE_URL:?Set the public HTTPS origin}"
+      DATABASE_URL: "${DATABASE_URL:?Set the PostgreSQL runtime URL}"
+      RESEND_API_KEY: "${RESEND_API_KEY:?Set the Resend API key}"
+      DEKTA_EMAIL_FROM: "${DEKTA_EMAIL_FROM:?Set the verified Resend sender}"
+    ports:
+      - "127.0.0.1:4180:4180"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:4180/readyz').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      start_period: 15s
+      retries: 3

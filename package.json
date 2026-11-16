@@ -1,0 +1,28 @@
+{
+  "name": "dekta",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "DEKTA customer and business operations workspace for Indonesian teams.",
+  "scripts": {
+    "start": "node server/start.mjs",
+    "dev:full": "node scripts/dev-full.mjs",
+    "check:migrations": "node scripts/check-migrations.mjs",
+    "build": "node scripts/build.mjs",
+    "migrate": "node scripts/migrate.mjs",
+    "provision:runtime-role": "node scripts/provision-runtime-role.mjs",
+    "mcp": "node server/mcp/start.mjs"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "pg": "8.23.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8"
+  },
+  "license": "MIT"
+}
